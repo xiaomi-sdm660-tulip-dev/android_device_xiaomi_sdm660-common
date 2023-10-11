@@ -57,6 +57,11 @@ PRODUCT_PACKAGES += \
 RODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
 
+# Speed up apps
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    SystemUI
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl:32 \
