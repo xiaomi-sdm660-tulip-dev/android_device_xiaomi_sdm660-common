@@ -56,6 +56,9 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_VERSION := 4.19
 
+# Include the Prebuilt Kernels
+include device/xiaomi/bouquet-kernels/BoardConfigKernel.mk
+
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
