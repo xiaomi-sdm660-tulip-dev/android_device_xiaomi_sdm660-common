@@ -485,7 +485,5 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 USE_DEX2OAT_DEBUG := false
 
-BUILD_FINGERPRINT := acer/b1-780_ww_gen1/acer_barricadewifi:6.0/MRA58K/1481784106:user/release-keys
-
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/bouquet-common/bouquet-common-vendor.mk)
