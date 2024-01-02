@@ -445,6 +445,9 @@ PRODUCT_SOONG_NAMESPACES += \
 # Vibrator
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 
+# Inherit from emulated storege
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
