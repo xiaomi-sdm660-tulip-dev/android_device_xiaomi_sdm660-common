@@ -7,7 +7,7 @@
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_DUP_RULES := true
 
-COMMON_PATH := device/xiaomi/sdm660-common
+COMMON_PATH := device/xiaomi/bouquet-common
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
@@ -190,4 +190,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-include vendor/xiaomi/sdm660-common/BoardConfigVendor.mk
+include vendor/xiaomi/bouquet-common/BoardConfigVendor.mk

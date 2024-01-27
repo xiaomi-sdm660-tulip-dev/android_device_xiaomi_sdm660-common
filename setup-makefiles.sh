@@ -56,7 +56,7 @@ if [ -s "${MY_DIR}/../$DEVICE_SPECIFIED_COMMON/proprietary-files.txt" ]; then
     # Finish
     write_footers
 
-    DEVICE_COMMON="sdm660-common"
+    DEVICE_COMMON="bouquet-common"
 fi
 
 if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then

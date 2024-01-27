@@ -445,6 +445,9 @@ PRODUCT_SOONG_NAMESPACES += \
 # Vibrator
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 
+# Inherit from emulated storege
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
@@ -483,8 +486,7 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 # the size of the system image. This has no bearing on stack traces, but will
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-
-BUILD_FINGERPRINT := acer/b1-780_ww_gen1/acer_barricadewifi:6.0/MRA58K/1481784106:user/release-keys
+USE_DEX2OAT_DEBUG := false
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/sdm660-common/sdm660-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/bouquet-common/bouquet-common-vendor.mk)
